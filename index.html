@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot And Cold</title>
+</head>
+<style></style>
+<script src = "hotandcold.js"></script>
+<body onload = "initialize();">
+    <h1>Hot And Cold</h1>
+    <p1>In the game of Hot and Cold, the player gets a set number of turns to “find” a number. As the
+        player guesses, they will be informed of how close they are to the actual number in terms of hot
+        and cold.
+    </p1>
+    <ul>
+        <li>Within 5: Very Hot</li>
+        <li>Within 6-8: Hot</li>
+        <li>Within 9-15: Very Warm</li>
+        <li>Within 16-20: Warm</li>
+        <li>Within 21-30: Cool</li>
+        <li>Within 31-40: Very Cool</li>
+        <li>Within 41-55: Cold</li>
+        <li>More than 55: Very Cold</li>
+    </ul>
+
+    <div id = "output"></div>
+
+    <button onclick = "operation(1);">+ 1</button>
+    <button onclick = "operation(-1);">- 1</button>
+    <button onclick = "operation(5);">+ 5</button>
+    <button onclick = "operation(-5);">- 5</button>
+    <button onclick = "operation(10);">+ 10</button>
+    <button onclick = "operation(-10);">- 10</button>
+    <button onclick = "operation(25);">+ 25</button>
+    <button onclick = "operation(-25);">- 25</button>
+    <button onclick = "commit();">Commit</button>
+    <button onclick = "clear();">Clear</button>
+    <button onclick = "initialize();">Reset</button>
+</body>
+</html>
